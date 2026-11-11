@@ -1,0 +1,20 @@
+analyze_tcp4: ok=1 bcast=0 mcast=0 ucast=-1 vlan=0 ip4=-1 ip6=0 tcp=-1 udp=0 frag=0 l2=14 l3=20 vid=0 prio=0
+verify_tcp4_good: ip=2 ipcs=2 xxpcs=2 xxp=2 full=1 udp=0 fixIp=0 fixXxp=0 frag=0 iphl=20
+review_tcp4: ip=2 ipcs=0 xxpcs=0 xxp=2 full=1 udp=0 fixIp=0 fixXxp=0 frag=0 iphl=20
+verify_tcp4_badcs: ip=2 ipcs=2 xxpcs=3 xxp=2 full=1 udp=0 fixIp=0 fixXxp=0 frag=0 iphl=20
+verify_tcp4_fix: ip=2 ipcs=0 xxpcs=3 xxp=2 full=1 udp=0 fixIp=0 fixXxp=1 frag=0 iphl=20
+fixed_tcp4_csum_matches_original=1
+verify_ip4_badcs: ip=2 ipcs=3 xxpcs=2 xxp=2 full=1 udp=0 fixIp=0 fixXxp=0 frag=0 iphl=20
+analyze_udp4: ok=1 bcast=0 mcast=0 ucast=-1 vlan=0 ip4=-1 ip6=0 tcp=0 udp=-1 frag=0 l2=14 l3=20 vid=0 prio=0
+verify_udp4_good: ip=2 ipcs=2 xxpcs=2 xxp=2 full=1 udp=1 fixIp=0 fixXxp=0 frag=0 iphl=20
+analyze_udp4_bcast: ok=1 bcast=-1 mcast=0 ucast=0 vlan=0 ip4=-1 ip6=0 tcp=0 udp=-1 frag=0 l2=14 l3=20 vid=0 prio=0
+analyze_udp4_mcast: ok=1 bcast=0 mcast=-1 ucast=0 vlan=0 ip4=-1 ip6=0 tcp=0 udp=-1 frag=0 l2=14 l3=20 vid=0 prio=0
+analyze_ip4_fragment: ok=1 bcast=0 mcast=0 ucast=-1 vlan=0 ip4=-1 ip6=0 tcp=0 udp=0 frag=-1 l2=14 l3=20 vid=0 prio=0
+analyze_tcp6: ok=1 bcast=0 mcast=0 ucast=-1 vlan=0 ip4=0 ip6=-1 tcp=-1 udp=0 frag=0 l2=14 l3=40 vid=0 prio=0
+verify_tcp6_good: ip=3 ipcs=2 xxpcs=2 xxp=2 full=1 udp=0 fixIp=0 fixXxp=0 frag=0 iphl=40
+verify_tcp6_badcs: ip=3 ipcs=2 xxpcs=3 xxp=2 full=1 udp=0 fixIp=0 fixXxp=0 frag=0 iphl=40
+analyze_udp6_hopbyhop: ok=1 bcast=0 mcast=0 ucast=-1 vlan=0 ip4=0 ip6=-1 tcp=0 udp=-1 frag=0 l2=14 l3=48 vid=0 prio=0
+analyze_vlan_udp4: ok=1 bcast=0 mcast=0 ucast=-1 vlan=-1 ip4=-1 ip6=0 tcp=0 udp=-1 frag=0 l2=18 l3=20 vid=291 prio=5
+analyze_truncated_ip4: ok=0 bcast=0 mcast=0 ucast=-1 vlan=0 ip4=-1 ip6=0 tcp=0 udp=0 frag=0 l2=14 l3=0 vid=0 prio=0
+analyze_arp: ok=1 bcast=0 mcast=-1 ucast=0 vlan=0 ip4=0 ip6=0 tcp=0 udp=0 frag=0 l2=14 l3=0 vid=0 prio=0
+rfc1071_selfcheck=220d

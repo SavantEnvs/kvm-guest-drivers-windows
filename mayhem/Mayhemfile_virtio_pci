@@ -1,0 +1,11 @@
+project: savantenvs/kvm-guest-drivers-windows
+target: virtio_pci
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/virtio_pci/testsuite
+cmds:
+  - cmd: /mayhem/virtio_pci
+    libfuzzer: true
+    timeout: 30
+    env:
+      MFUZZ_COMPAT_LEVEL: '2'

@@ -1,0 +1,6 @@
+keyboard: classes=1 len=67 bytes=05010906a101850105071ae0002ae700
+mouse: classes=1 len=97 bytes=05010902a1010901a100850105091901
+tablet: classes=1 len=152 bytes=050d0901a10185010920a102050d1500
+joystick: classes=1 len=95 bytes=05010904a10185010501050117260001
+consumer: classes=1 len=34 bytes=050c0901a10185011500250175010ae2
+empty: classes=0 len=0 bytes=

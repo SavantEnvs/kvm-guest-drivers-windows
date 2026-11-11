@@ -1,0 +1,20 @@
+modern: status=0x0
+modern.map: common=0 isr=8192 notify=4096 notify_len=1024 config=12288 config_len=256 mult=4
+modern.status_after_init=3
+modern.cfg1=11
+modern.cfg4=88776655
+modern.cfg_oob=11
+modern.set_cfg2=22eeee55
+modern.set_features=0x0
+modern.status_after_features=11
+modern.query1: status=0x0 num=8 ring=4096 heap_nonzero=1
+modern.query2: status=0xc0000225
+modern.find_queues: status=0x0 notify_addr0=4096 size0=8
+modern.add_buf=0
+modern.kick_wrote=1
+no_isr: status=0xc000000d
+misaligned_common: status=0xc000000d
+common_past_bar: status=0xc000000d
+legacy: status=0x0 addr_set=1
+legacy.query0: status=0x0 num=16
+legacy.status_after_init=3

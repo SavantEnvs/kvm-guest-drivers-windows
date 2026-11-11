@@ -1,0 +1,21 @@
+split.layout: avail_off=128 used_off=4096
+split.size: n256=10246 n8=4166
+split.add2: rc=0
+split.desc0: addr=1000 len=64 flags=1 next=1
+split.desc1: addr=2000 len=1500 flags=2 next=2
+split.avail: idx=1 ring0=0
+split.has_buf_before=0 kick_prepare=1
+split.has_buf_after=1
+split.get_buf: opaque_ok=1 len=1564 has_buf=0
+split.add_when_full: rc=-28
+split.detach_unused: opaque_ok=1 avail_idx=8
+split.cb: interrupts_on=1 after_disable=0 enable_cb_empty_rc=1
+split.kick_prepare_no_notify=0
+packed.size: n256=4104 n4=72
+packed.add2: rc=0
+packed.desc0: addr=1000 len=64 id=0 flags=81
+packed.desc1: addr=2000 len=1500 id=0 flags=82
+packed.has_buf_before=0
+packed.get_buf: opaque_ok=1 len=777
+packed.add_when_full: rc=-28
+packed.detach_unused: opaque_ok=1
